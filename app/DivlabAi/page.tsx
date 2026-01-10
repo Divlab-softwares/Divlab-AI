@@ -325,7 +325,8 @@ export default function DivlabAi( { session }: Props) {
             user = "Invité"
         }
         const NewFiles: File[] = files
-        const receiver: String = "ngananongni@gmail.com"
+        // const receiver: String = "ngananongni@gmail.com"
+        const receiver: String = "DIVLABAI"
 
         if (instance == null || instance == -1) {
 
@@ -351,7 +352,14 @@ export default function DivlabAi( { session }: Props) {
 
             setInstance(instanceVal);
 
-            const index = requests[requests.length - 1].id;
+            let index = 0;
+
+            if (requests.length == 0) {
+                index = 0;
+            } else {
+                index = requests[requests.length - 1].id;
+            }
+            
 
 
             if (receiver == "ngananongni@gmail.com") {
