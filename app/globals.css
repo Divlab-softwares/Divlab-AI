@@ -1,3 +1,10 @@
+/* @source ./node_modules/lightwindcss/ */
+@layer base {
+  html {
+    font-size: 12px;
+  }
+}
+
 @import "tailwindcss";
 
 :root {
